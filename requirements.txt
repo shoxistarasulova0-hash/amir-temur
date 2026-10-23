@@ -1,0 +1,7 @@
+fastapi>=0.110,<1
+uvicorn[standard]>=0.29,<1
+requests>=2.31,<3
+Pillow>=10.1,<13
+numpy>=1.26,<3
+edge-tts>=6.1.12
+gTTS>=2.5

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: amir-temur-video
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: VIDEO_FPS
+        value: "24"
+      - key: TTS_VOICE
+        value: uz-UZ-SardorNeural
+      - key: GENERATE_ON_START
+        value: "0"
+      - key: WIKI_USER_AGENT
+        value: "AmirTemurVideoBot/1.0 (educational project)"
+      - key: API_TOKEN
+        generateValue: true
